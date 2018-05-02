@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import DeleteBtn from "../DeleteBtn";
+import MapContainer from "../Map";
 //import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
@@ -71,6 +72,8 @@ class MyDrugs extends Component {
     return (
 
       <div>
+        
+      
 
         <h1>Let's search my drugs</h1>
         
@@ -83,7 +86,7 @@ class MyDrugs extends Component {
                 <ListItem key={drug._id}>
                   <Link to={"/drugs/" + drug._id}>
                     <strong>
-                      {drug.drug} ======== {drug.active_ingredient}
+                      {drug.drug} === {drug.active_ingredient}
                     </strong>
                   </Link>
                   <DeleteBtn onClick={() => this.deleteDrug(drug._id)} />
@@ -95,6 +98,9 @@ class MyDrugs extends Component {
           )}
         </div>
 
+      
+
+      <MapContainer></MapContainer>
       </div>
     )
 

@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the articlesController
+// Defining methods for the controller
 module.exports = {
 
   findAll: function(req, res) {
@@ -22,6 +22,7 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  
   update: function(req, res) {
     db.Drug
       .findOneAndUpdate({ _id: req.params.id }, req.body)

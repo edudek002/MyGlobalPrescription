@@ -26,3 +26,16 @@ Todays purpose will be to design front-end UI and also list components to use fo
 
 We will be using Trello to for project management, and constantly push and pull to the github master branch. 
 
+
+
+
+
+### Key Dependencies
+
+`request`: enables `cheerio` to get access to front-end code of https://
+
+`cheerio`: scrapes front-end code from https://
+
+`mongoose`: be in charge of database 
+
+`express`: builds server-side routes and functions

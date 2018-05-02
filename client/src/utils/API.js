@@ -2,6 +2,8 @@ import axios from "axios";
 
 const BASEURL = "https://api.fda.gov/drug/label.json?search=ibuprofen"
 
+
+
 export default {
   // Gets all drugs
   getDrugs: function() {
@@ -22,7 +24,6 @@ export default {
   searchDrug: function(){
     console.log("My full query " + BASEURL); 
     return axios.get(BASEURL);
-  } 
-
+  },
 
 };

@@ -9,9 +9,6 @@ console.log("Is this working???????");
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/internationaldb",
-  {
-    useMongoClient: true
-  }
 );
 
 const drugSeed = [
